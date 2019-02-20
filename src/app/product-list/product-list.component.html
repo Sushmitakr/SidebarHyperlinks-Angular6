@@ -1,0 +1,43 @@
+<!-- <head>
+  <title>Font Awesome Icons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head> -->
+<!-- <h1>Products List</h1> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class = "link">
+<h1>Useful Links</h1>
+<ul>
+	<li *ngFor="let product of products">
+		<a [routerLink]="['/product/', product.id]" target="_blank">{{product.name}}   <i class="fa fa-warning" style="font-size:24px;color:red"></i></a>
+  </li>
+ 
+</ul>
+</div>
+<a routerLink="/">Go To Home</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <li *ngIf="warningPro(products)">
+    <a [routerLink]="['/product/', product.id]" target="_blank">{{product.name}}</a>
+  <i class="fa fa-warning" style="font-size:24px;color:red"></i>
+ </li> -->
+ <!-- <div > -->
+      <!-- <li *ngIf="product.id=8"><a [routerLink]="['/product/', product.id]">{{product.name}} <i class="fa fa-warning" style="font-size:24px;color:red"></i></a></li> -->
+
+  <!-- </div> -->
