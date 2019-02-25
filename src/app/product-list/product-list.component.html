@@ -8,9 +8,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class = "link">
 <h1>Useful Links</h1>
-<ul>
-	<li *ngFor="let product of products">
+<ul *ngFor="let product of products ; index as i">
+	<!-- <li *ngFor="let product of products">
 		<a [routerLink]="['/product/', product.id]" target="_blank">{{product.name}}   <i class="fa fa-warning" style="font-size:24px;color:red"></i></a>
+  </li> -->
+   <li>
+    <a [routerLink]="['/product', product.id]" target="_blank">{{product.name}}  <span *ngIf="i === products.length -1">
+      <i class="fa fa-warning" style="font-size:24px;color:red"></i> </span>
+     </a>
   </li>
  
 </ul>
